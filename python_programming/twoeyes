@@ -1,0 +1,16 @@
+Python 3.2.3 (default, Apr 11 2012, 07:12:16) [MSC v.1500 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> from graphics import *
+>>> win = GraphWin()
+>>> ## Correct way to create two circles, using clone
+>>> leftEye = Circle(Point(80, 50), 5)
+>>> leftEye.setFill('Yellow")
+		
+SyntaxError: EOL while scanning string literal
+>>> leftEye.setFill('Yellow')
+>>> leftEye.setOutline('red')
+>>> rightEye = leftEye.clone() # rightEye is an exact copy of the left
+>>> rightEye.move(20, 0)
+>>> leftEye.draw(win)
+>>> rightEye.draw(win)
+>>> 
