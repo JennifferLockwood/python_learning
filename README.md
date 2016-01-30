@@ -1,2 +1,2 @@
 # Python Learning
-Python exercises from two books, ans some websites
+Python exercises from two books, and some websites
