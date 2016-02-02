@@ -1,4 +1,4 @@
-# 6-6_polling.py
+# favorite_languages_1.py
 
 favorite_languages = {
     'jen': 'python',
@@ -7,11 +7,13 @@ favorite_languages = {
     'phil': 'python',
     }
 
-other_people = ['john', 'sarah', 'david', 'phil', 'monique']
-
-for name in favorite_languages.keys():
+for name in sorted(favorite_languages.keys()):
     print(name.title() + ",thank you for taking the poll.")
 
-    if name in other_people:
-        print("  Hi " + name.title() +
-              ", please take our poll!")
+print("\nThe following languages have been mentioned:")
+for language in favorite_languages.values():
+    print(language.title())
+
+print("\nThe following languages have been mentioned:")
+for language in set(favorite_languages.values()):
+    print(language.title())
