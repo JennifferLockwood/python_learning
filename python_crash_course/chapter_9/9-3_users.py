@@ -1,8 +1,8 @@
 class User():
-    '''A simple attempt to describe users.'''
+    """A simple attempt to describe users."""
 
     def __init__(self, first_name, last_name, occupation, country, city,):
-        '''Initialize first_name and last_name attributtes.'''
+        """Initialize first_name and last_name attributes."""
         self.first_name = first_name
         self.last_name = last_name
         self.occupation = occupation
@@ -10,14 +10,14 @@ class User():
         self.city = city
 
     def describe_user(self):
-        '''Simulate user's full name and occupation.'''
+        """Simulate user's full name and occupation."""
         full_name = self.first_name + " " + self.last_name
         print(full_name.title() + " lives in " + self.country.title() + ".")
 
     def greeter_user(self):
-        '''Simulate a greeting.'''
+        """Simulate a greeting."""
         print("Hello " + self.first_name.title() +
-              ", welcome to our webite!")
+              ", welcome to our website!")
 
 my_user = User('michael', 'clooney', 'carpenter', 'france', 'lyon')
 your_user = User('anna', 'williams', 'nurse', 'canada', 'quebec')
