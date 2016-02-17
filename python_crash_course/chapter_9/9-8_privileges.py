@@ -22,10 +22,8 @@ class User():
 class Privileges():
     """A simple attempt to model privileges for a user."""
 
-    def __init__(self):
+    def __init__(self, privileges):
         """Initialize the privileges' attributes."""
-        privileges = ['can add a post', 'can delete a post',
-                           'can ban user', 'can change security settings']
         self.privileges = privileges
 
     def describe_privileges(self):
@@ -44,10 +42,13 @@ class Admin(User):
         Then initialize attributes specific to an administrator.
         """
         super().__init__(first_name, last_name, occupation, country, city)
-        self.list_privileges = Privileges()
+
+        privileges = ['can add a post', 'can delete a post',
+                      'can ban user', 'can change security settings']
+        self.privileges = Privileges(privileges)
             
 
 admin_user = Admin('michael', 'clooney', 'administrator', 'canada', 'quebec')
-admin_user.describe_user()
 admin_user.greeter_user()
-admin_user.list_privileges.describe_privileges()
+admin_user.describe_user()
+admin_user.privileges.describe_privileges()
