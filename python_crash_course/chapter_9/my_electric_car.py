@@ -1,4 +1,4 @@
-from car import ElectricCar
+from python_crash_course.chapter_9.electric_car import ElectricCar
 
 my_tesla = ElectricCar('tesla', 'model s', 2016)
 
