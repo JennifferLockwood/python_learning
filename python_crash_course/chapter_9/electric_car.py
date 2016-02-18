@@ -1,6 +1,7 @@
 """A set of classes that can be used to represent electric cars."""
 
-from car import Car
+
+from python_crash_course.chapter_9.car import Car
 
 class Battery():
     """A simple attempt to model a battery for an electric car."""
