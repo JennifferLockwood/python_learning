@@ -1,0 +1,5 @@
+In Python you can do conditional tests.
+In Python you can use tuples.
+In Python you can change, add and remove elements in a list.
+In Python you can work with dictionaries.
+In Python you can use a flag in while loops.
